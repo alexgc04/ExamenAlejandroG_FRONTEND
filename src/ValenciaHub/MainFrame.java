@@ -18,7 +18,6 @@ import java.awt.event.ActionListener;
 import java.awt.event.FocusAdapter;
 import java.awt.event.FocusEvent;
 import java.io.*;
-import java.nio.file.Files;
 
 public class MainFrame extends JFrame {
     private JTextField campo_ID;
@@ -44,6 +43,8 @@ public class MainFrame extends JFrame {
     private JRadioButton hub1RadioButton;
     private JRadioButton hub2RadioButton;
     private JRadioButton hub3RadioButton;
+    private JButton EXAMENButton;
+    private JTextField textField1;
     private JButton hub1Button;
 
 
@@ -350,7 +351,20 @@ public class MainFrame extends JFrame {
             }
         });
 
+        // EXAMEN
 
+        EXAMENButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
+            }
+        });
+        textField1.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
+            }
+        });
     }
     private int hubSelected(){
         int hubNumber;
